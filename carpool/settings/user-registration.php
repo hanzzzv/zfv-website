@@ -111,19 +111,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $mail = new PHPMailer(true);
     $mail->isSMTP();
-    // $mail->Host = 'smtp.hostinger.com';
-    // $mail->SMTPAuth = 'true';
-    // $mail->Username = 'sabay_app@jeyymsantos.com';
-    // $mail->Password = 'Jeyym@15';
-    // $mail->SMTPSecure = 'tls';
-    // $mail->Port = '587';
-
-    // $mail->setFrom('sabay_app@jeyymsantos.com', 'Sabay App');
-    // $mail->addAddress($email);
-    // $mail->isHTML(true);
-    // $mail->Subject = $subject;
-    // $mail->Body = $message;
-    // $mail->send();
 
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';

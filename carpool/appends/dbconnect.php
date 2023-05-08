@@ -1,10 +1,10 @@
 <?php
 
-$server = "localhost";
-$server_username = "root";
-$server_password = "";
-$server_database = "villafuertecarpool";
-$baseline = "http://localhost/newprojectzfv";
+// $server = "localhost";
+// $server_username = "root";
+// $server_password = "";
+// $server_database = "villafuertecarpool";
+// $baseline = "http://localhost/newprojectzfv";
 
 $server = "localhost";
 $server_username = "u235219407_hanz";
