@@ -63,23 +63,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmnt->bind_param('sss', $users_id, $id_type, $id_number);
     $stmnt->execute();
 
+    // Update balance with 10 free tickets
+    $sql = "UPDATE tblusers SET users_verified = 'Y', users_balance = users_balance + 10 WHERE users_id = '$users_id'";
+    $result = $connection->query($sql);
+
     $stmnt->close();
     $connection->close();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 
     // Mailling Part
     $name = $lastname . ", " . $middlename." ". $firstname;

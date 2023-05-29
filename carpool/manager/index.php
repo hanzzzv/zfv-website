@@ -86,7 +86,10 @@ if (!empty($_SESSION['message'])) {
                     <a class="nav-link" href="manage-users/plugin-users.php">(Verified Users Reports)</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">(Routes Review)</a>
+                    <a class="nav-link" href="manage-cicos/transac.php">(Transactions)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="manage-cicos/reports.php">(Finance Reports)</a>
                 </li>
 
                 <li class="nav-item">

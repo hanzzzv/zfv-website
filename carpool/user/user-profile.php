@@ -44,6 +44,7 @@ if ($result->num_rows > 0) {
         $province = $row['users_province'];
         $verification = $row['users_stamp_verification'];
         $creation = $row['users_stamp_creation'];
+        $users_balance = $row['users_balance'];
 
     }
 } else {
@@ -116,6 +117,7 @@ if ($result->num_rows > 0) {
                 <li class="nav-item">
                     <a class="nav-link" href="user-profile-update.php">Register ID</a>
                 </li>
+   
                 <li class="nav-item">
                     <a class="nav-link" href="../settings/sign-out.php">Sign Out</a>
                 </li>
@@ -210,6 +212,23 @@ if ($result->num_rows > 0) {
                 <th> Province: </th>
                 <td> <?= $province ?> </td>
             </tr>
+            <tr>
+                <th> Account Balance: </th>
+                <td> <?= $users_balance ?> </td>
+            </tr>
+            <tr>
+        <th> Actions: </th>
+        <td>
+            <?php
+            if ($type == "passenger") {
+                echo "<a href='cash_in.php'><button class='btn btn-primary'>Cash In</button></a>";
+            } else {
+                echo "<a href='cash_in.php'><button class='btn btn-primary'>Cash In</button></a>";
+                echo "<a href='cash_out.php'><button class='btn btn-primary'>Cash Out</button></a>";
+            }
+            ?>
+        </td>
+    </tr>
 
         </table>
 

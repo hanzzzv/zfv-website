@@ -50,20 +50,17 @@ use PHPMailer\PHPMailer\Exception;
         $mail -> isSMTP();
         $mail ->Host = 'smtp.gmail.com';
         $mail -> SMTPAuth = true;
-        $mail -> Username = 'mailer.zfv.enterprises@gmail.com';
-        $mail -> Password = 'otovamrabipqtbzi';
+        $mail -> Username = 'contact.zfventerprises@gmail.com';
+        $mail -> Password = 'qypbpkaeccofwusz';
         $mail -> SMTPSecure ='tls';
         $mail -> Port = 587;
 
 
-        // $mail->Host = 'smtp.gmail.com';
-        // $mail->SMTPAuth = true;
-        // $mail->Username = 'buenaroa.connect@gmail.com';
-        // $mail->Password = 'clkbqhdlrpcnjzsw'; //Email Password
+ 
         // $mail->SMTPSecure = 'ssl';
         // $mail->Port = '465';
  
-        $mail-> setFrom('mailer.zfv.enterprises@gmail.com', 'ZFV Enterprises');
+        $mail-> setFrom('contact.zfventerprises@gmail.com', 'ZFV Enterprises');
         
         $mail ->addAddress($email);
 
@@ -101,12 +98,12 @@ use PHPMailer\PHPMailer\Exception;
         $mail2 -> isSMTP();
         $mail2 ->Host = 'smtp.gmail.com';
         $mail2 -> SMTPAuth = true;
-        $mail2 -> Username = 'mailer.zfv.enterprises@gmail.com';
-        $mail2 -> Password = 'otovamrabipqtbzi';
+        $mail2 -> Username = 'contact.zfventerprises@gmail.com';
+        $mail2 -> Password = 'qypbpkaeccofwusz';
         $mail2 -> SMTPSecure ='tls';
         $mail2 -> Port = 587;
         
-        $mail2 ->addAddress('mailer.zfv.enterprises@gmail.com');
+        $mail2 ->addAddress('contact.zfventerprises@gmail.com');
         $mail2 -> isHTML(true);
         
         $mail2 ->Subject = $subject2;
@@ -115,3 +112,4 @@ use PHPMailer\PHPMailer\Exception;
         header('location:contact.html');    
     }
 ?>
+
