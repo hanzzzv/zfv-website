@@ -109,7 +109,7 @@ use PHPMailer\PHPMailer\Exception;
         $mail2 ->Subject = $subject2;
         $mail2 -> Body = $msg2;
         $mail2 ->send();
-        header('location:contact.html');    
+        header('location:contact.php');
     }
 ?>
 
