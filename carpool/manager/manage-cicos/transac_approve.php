@@ -40,6 +40,6 @@
         $result2 = mysqli_query($connection, $sql2);
     }
 
-    header("Location: index.php");
+    header("Location: index.html");
     exit;
 ?>

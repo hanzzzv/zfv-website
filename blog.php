@@ -42,14 +42,14 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
-      <h1 class="logo me-auto"><a href="index.php">ZFV Enterprises<span></span></a></h1>
+      <h1 class="logo me-auto"><a href="index.html">ZFV Enterprises<span></span></a></h1>
       <!-- <a href="index.php" class="logo me-auto"><img src="assets/img/logozfv.png" alt=""></a> -->
       <!-- Uncomment below if you prefer to use an image logo -->
     
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.php">Home</a></li>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
           <!-- <li><a class="nav-link scrollto" href="#about">About</a></li> -->
           <li class="dropdown"><a href="#services"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -113,7 +113,7 @@
       <div class="container">
 
         <ol>
-          <li><a href="index.php">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li>Services</li>
         </ol>
         <h2>Services</h2>

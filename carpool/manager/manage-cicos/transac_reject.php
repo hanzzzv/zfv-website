@@ -19,6 +19,6 @@ $id=$_GET['id'];
 $sql1="UPDATE tbreload SET status = 'Rejected' WHERE users_id = '$id'";
 $result1 = mysqli_query($connection, $sql1);
 
-header("Location:index.php");
+header("Location:index.html");
 
 ?>

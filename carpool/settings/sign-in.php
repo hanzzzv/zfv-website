@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['auth_type'] =  $row['users_type'];
 
                 if($row['users_type'] == 'manager'){
-                    header('Location: ' . $baseline . '/manager/index.php');
+                    header('Location: ' . $baseline . '/manager/index.html');
                     return;
                 }
 

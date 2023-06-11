@@ -24,7 +24,7 @@ if($_SERVER['REQUEST_METHOD'] === 'GET'){
     if(!is_null($row['users_stamp_verification'])){
         $_SESSION['bg'] =  "danger";
         $_SESSION['message'] = "Congrats! Email verification Successful";
-        header('Location: index.php');
+        header('Location: index.html');
         return;
     }
 
@@ -37,5 +37,5 @@ if($_SERVER['REQUEST_METHOD'] === 'GET'){
 
     $_SESSION['bg'] =  "success";
     $_SESSION['message'] = "Account is Verified, Proceed to Sign IN";
-    header('Location: ' . $baseline .'/index.php');
+    header('Location: ' . $baseline .'/index.html');
 }

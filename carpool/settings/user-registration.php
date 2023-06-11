@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $_SESSION['bg'] =  "danger";
         $_SESSION['message'] = "Invalid format!";
-        header('Location: ' . $baseline .'/index.php');
+        header('Location: ' . $baseline .'/index.html');
         return;
     }
 
@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($result->num_rows > 0) {
         $_SESSION['bg'] =  "danger";
         $_SESSION['message'] = "Email already exist in the system";
-        header('Location: ' . $baseline .'/index.php');
+        header('Location: ' . $baseline .'/index.html');
         return;
     }
 
